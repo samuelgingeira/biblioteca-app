@@ -1,7 +1,7 @@
 async function getLibros() {
 
   const res = await fetch(
-    "http://localhost:3000/api/libros",
+    "/api/libros",
     {
       cache: "no-store",
     }
@@ -15,7 +15,7 @@ async function getLibros() {
 async function getUsuarios() {
 
   const res = await fetch(
-    "http://localhost:3000/api/usuarios",
+    "/api/usuarios",
     {
       cache: "no-store",
     }
@@ -29,7 +29,7 @@ async function getUsuarios() {
 async function getLogs() {
 
   const res = await fetch(
-    "http://localhost:3000/api/logs",
+    "/api/logs",
     {
       cache: "no-store",
     }
@@ -43,7 +43,7 @@ async function getLogs() {
 async function getPrestamos() {
 
   const res = await fetch(
-    "http://localhost:3000/api/prestamos",
+    "/api/prestamos",
     {
       cache: "no-store",
     }
