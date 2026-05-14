@@ -6,7 +6,7 @@ import LibrosList from "@/components/LibrosList";
 async function getLibros() {
 
   const res = await fetch(
-    "http://localhost:3000/api/libros",
+    "/api/libros",
     {
       cache: "no-store",
     }

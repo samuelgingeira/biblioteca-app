@@ -6,7 +6,7 @@ import PrestamosList from "@/components/PrestamosList";
 async function getPrestamos() {
 
   const res = await fetch(
-    "http://localhost:3000/api/prestamos",
+    "/api/prestamos",
     {
       cache: "no-store",
     }
