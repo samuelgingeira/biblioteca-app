@@ -1,36 +1,140 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+#  Biblioteca App
 
-## Getting Started
+Aplicación web completa para la gestión de una biblioteca desarrollada con Next.js, MySQL y MongoDB.
 
-First, run the development server:
+---
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+##  Tecnologías utilizadas
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- Next.js 16
+- React
+- Bootstrap 5
+- MySQL (AWS RDS)
+- MongoDB Atlas
+- Sequelize ORM
+- Mongoose ODM
+- Vercel
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+---
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+##  Funcionalidades principales
 
-## Learn More
+### Gestión de libros
+- Crear libros
+- Editar libros
+- Eliminar libros
+- Buscar y filtrar libros
+- Gestión de disponibilidad
 
-To learn more about Next.js, take a look at the following resources:
+###  Gestión de usuarios
+- Crear usuarios
+- Editar usuarios
+- Eliminar usuarios
+- Ver perfil de usuario
+- Ver préstamos asociados
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+###  Gestión de préstamos
+- Crear préstamos
+- Eliminar préstamos
+- Actualización automática de disponibilidad
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+###  Logs MongoDB
+- Registro automático de acciones
+- Historial de préstamos
+- Persistencia NoSQL
 
-## Deploy on Vercel
+---
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+##  Base de datos
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## 📊 Diagrama Relacional MySQL
+
+![Diagrama ER](./public/capturas/diagrama-er.png)
+
+### MySQL
+Base de datos relacional con:
+- libros
+- usuarios
+- prestamos
+- categorias
+
+### MongoDB
+Colección:
+- logprestamos
+
+---
+
+##  Arquitectura
+
+- Frontend y Backend con Next.js App Router
+- API REST usando Route Handlers
+- Sequelize para MySQL
+- Mongoose para MongoDB
+- Bootstrap para interfaz visual
+
+---
+
+
+##  Capturas
+
+### Dashboard
+
+![Dashboard](./public/capturas/dashboard.png)
+
+---
+
+### Libros
+
+![Libros](./public/capturas/libros.png)
+
+---
+
+### Usuarios
+
+![Usuarios](./public/capturas/usuarios.png)
+
+---
+
+### Préstamos
+
+![Prestamos](./public/capturas/prestamos.png)
+
+---
+
+### Logs
+
+![Logs](./public/capturas/logs.png)
+
+##  Capturas Base de Datos
+
+### Tabla libros
+
+![Libros](./public/capturas/tabla-libros.png)
+
+---
+
+### Tabla usuarios
+
+![Usuarios](./public/capturas/tabla-usuarios.png)
+
+---
+
+### Tabla prestamos
+
+![Prestamos](./public/capturas/tabla-prestamos.png)
+
+---
+
+### Tabla categorias
+
+![Categorias](./public/capturas/tabla-categorias.png)
+
+---
+
+### Colección MongoDB
+
+![Mongo](./public/capturas/mongo-logs.png)
+
+## URL Vercel
+
+https://biblioteca-app-nu.vercel.app
