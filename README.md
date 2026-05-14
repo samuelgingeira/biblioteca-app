@@ -131,10 +131,6 @@ Colección:
 
 ---
 
-### Colección MongoDB
-
-![Mongo](./public/capturas/mongo-logs.png)
-
 ## URL Vercel
 
 https://biblioteca-app-nu.vercel.app
