@@ -5,8 +5,10 @@ import PrestamosList from "@/components/PrestamosList";
 
 async function getPrestamos() {
 
+  const baseUrl = process.env.NEXT_PUBLIC_BASE_URL;
+
   const res = await fetch(
-    "/api/prestamos",
+    `${baseUrl}/api/prestamos`,
     {
       cache: "no-store",
     }

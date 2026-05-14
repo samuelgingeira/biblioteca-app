@@ -1,7 +1,9 @@
 async function getLibros() {
 
+  const baseUrl = process.env.NEXT_PUBLIC_BASE_URL;
+
   const res = await fetch(
-    "/api/libros",
+    `${baseUrl}/api/libros`,
     {
       cache: "no-store",
     }
@@ -14,8 +16,10 @@ async function getLibros() {
 
 async function getUsuarios() {
 
+  const baseUrl = process.env.NEXT_PUBLIC_BASE_URL;
+
   const res = await fetch(
-    "/api/usuarios",
+    `${baseUrl}/api/usuarios`,
     {
       cache: "no-store",
     }
@@ -28,8 +32,10 @@ async function getUsuarios() {
 
 async function getLogs() {
 
+  const baseUrl = process.env.NEXT_PUBLIC_BASE_URL;
+
   const res = await fetch(
-    "/api/logs",
+    `${baseUrl}/api/logs`,
     {
       cache: "no-store",
     }
@@ -42,8 +48,10 @@ async function getLogs() {
 
 async function getPrestamos() {
 
+  const baseUrl = process.env.NEXT_PUBLIC_BASE_URL;
+
   const res = await fetch(
-    "/api/prestamos",
+    `${baseUrl}/api/prestamos`,
     {
       cache: "no-store",
     }
@@ -91,7 +99,7 @@ export default async function Home() {
             <div className="card-body">
 
               <h5 className="card-title">
-                 Libros
+                Libros
               </h5>
 
               <p className="display-5 fw-bold">
@@ -112,7 +120,7 @@ export default async function Home() {
             <div className="card-body">
 
               <h5 className="card-title">
-                 Usuarios
+                Usuarios
               </h5>
 
               <p className="display-5 fw-bold">
@@ -133,7 +141,7 @@ export default async function Home() {
             <div className="card-body">
 
               <h5 className="card-title">
-                 Prestamos
+                Prestamos
               </h5>
 
               <p className="display-5 fw-bold">
@@ -154,7 +162,7 @@ export default async function Home() {
             <div className="card-body">
 
               <h5 className="card-title">
-                 Logs
+                Logs
               </h5>
 
               <p className="display-5 fw-bold">

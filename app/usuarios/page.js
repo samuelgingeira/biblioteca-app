@@ -5,8 +5,10 @@ import UsuariosList from "@/components/UsuariosList";
 
 async function getUsuarios() {
 
+  const baseUrl = process.env.NEXT_PUBLIC_BASE_URL;
+
   const res = await fetch(
-    "/api/usuarios",
+    `${baseUrl}/api/usuarios`,
     {
       cache: "no-store",
     }
